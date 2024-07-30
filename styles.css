@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient
+    135deg, 
+    #f4f4f4, 
+    #c77827, 
+    #652914, 
+    #70942e, 
+    #7c747d ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    position: relative;
+}
+
+.name{
+    width: 100%;
+    position: fixed;
+    bottom: 80%;
+    text-align: center;
+    transform: translateY(-50%);
+    
+    
+  
+   
+}
+.bb{
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 87, 34, 0.8), /* Warm orange */
+        rgba(255, 193, 7, 0.8)  /* Warm yellow */
+    );
+    -webkit-background-clip:text;
+    background-clip: text;
+}
+
+.tag{
+    width: 100%;
+    bottom: 65%;
+    text-align: center;
+    position: absolute;
+    color: rgb(242, 255, 0);
+}
+.ws{
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 400%;
+ font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+}
+.cont{
+    width: 100%;
+    bottom: 52%;
+    text-align: center;
+    position: absolute;
+    
+}
+.f{
+    font-size: 7rem;
+    color: whitesmoke;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+   
+}.f{
+    font-size: clamp(50px,8vw,100px);
+    display: inline-block;
+}
+.tagline {
+    
+    position: absolute;
+    bottom: 30%;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    color: white;
+     text-align: center;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.large {
+  
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 400;
+    line-height: 170%;
+   text-align: center; 
+    width: 100%; 
+}
+.large{
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 19px;
+}
+.butt{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+.btn{
+    background: linear-gradient(135deg, #f56c6c, #fcb045);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration:none ;
+    transition: background-colour 0.3s;
+}
+.btn:hover{
+    background: linear-gradient(135deg, #e03a3a, #ff8b00);
+}
+
+/*login page css*/
+body.login{
+    font-family:'Noto Sans', sans-serif;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #060201, #5f441d, #2e1d09, #936022, #bfa84e);
+    position: relative;
+}
+.banner2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/login.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.bri{
+    width: 100%;
+    position: fixed;
+    bottom: 80%;
+    text-align: center;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.brii{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: bold;
+    color: transparent;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 140, 0, 0.8), 
+        rgba(255, 99, 71, 0.8)  
+    );
+     -webkit-background-clip: text; 
+    background-clip: text;
+
+}
+
+.login-container, .signup-container{
+position: absolute;
+width: 400px;
+padding: 40px;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+color: white;
+text-align: center;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+transition: opacity 0.5s ease , visbility 0.5s ease;
+}
+
+.login-container{
+    visibility: visible;
+    opacity: 1;
+}
+.signup-container{
+    visibility: hidden;
+    opacity: 0;
+}
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+button:hover{
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    
+}
+.signup-link, .login-link {
+    margin-top: 20px;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.signup-link a, .login-link a {
+    color: #ff4b2b;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+/*home page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: linear-gradient
+    135deg, 
+    #f4f4f4, 
+    #c77827, 
+    #652914, 
+    #70942e, 
+    #7c747d ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    position: relative;
+}
+.cont{
+    width: 100%;
+    bottom: 52%;
+    text-align: center;
+    position: absolute;
+    
+}
+.f{
+    font-size: 7rem;
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+   
+}.f{
+    font-size: clamp(50px,8vw,100px);
+    display: inline-block;
+}
+/*navigation bar*/
+body ,h1,h2,h3,p,a{
+    margin:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+.navbar{
+    background: linear-gradient(135deg, #f7b42c, #fc575e, #ff8c00, #ffbb00);
+    border-bottom: 1 px solid #7c747d;
+    min-height: 80px;
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000000;
+    border-radius: 150px;
+    overflow: hidden;
+    width: fit-content;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
+}
+.container{
+    width:100%;
+    max-width: 1200px 
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    height: 100%;
+}
+.topnav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+.topnav a:hover{
+    background-color:rgba(0, 0, 0, 0.5) ;
+    color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .bb {
+        font-size: 2rem;
+        margin-bottom: 0.5rem; 
+    }
+
+    .ws {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem; 
+    }
+
+    .f {
+        margin-bottom: 1.5rem; 
+    }
+
+    .large {
+        font-size: 1rem;
+        margin-top: 1.5rem; 
+    }
+    .btn {
+        padding: 8px 16px; 
+        font-size: 0.875rem; 
+    }
+
+    .butt {
+        bottom: 15%; 
+    }
+    .login-container, .signup-container {
+        width: 90%;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 0.875rem;
+    }
+    .brii {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        padding: 15px;
+    }
+    .navbar {
+        bottom: 30%; 
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .bb {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem; 
+    }
+
+    .ws {
+        font-size: 1.25rem;
+        margin-bottom: 1rem; 
+    }
+
+    .f {
+        margin-bottom: 1rem; 
+    }
+
+    .large {
+        font-size: 0.875rem;
+        margin-top: 1rem; 
+    }
+
+    .tagline {
+        width: 90%;
+        padding: 10px;
+    }
+    .btn {
+        padding: 6px 12px; 
+        font-size: 0.75rem; 
+    }
+
+    .butt {
+        bottom: 10%; 
+    }
+    .login-container, .signup-container {
+        width: 90%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+    button {
+        font-size: 0.75rem;
+    } 
+    .brii {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        padding: 10px;
+    }
+    .navbar {
+        bottom: 0; 
+        left: 0; 
+        transform: none; 
+        width: 100%; 
+        border-radius: 0; 
+    }
+
+    .topnav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .topnav a {
+        width: 100%; 
+        text-align: center; 
+    }
+}
+
+
